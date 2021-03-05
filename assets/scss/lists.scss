@@ -1,5 +1,5 @@
 ul{
-    list-style: none;
+    list-style-type: disc;
     counter-reset: list;
     color: var(--articleText);
     position: relative;
@@ -85,7 +85,7 @@ ul li::before{
 }
 
 ol{
-    list-style: none;
+    list-style-type: decimal-leading-zero;
     counter-reset: list;
     color: var(--articleText);
     position: relative;
