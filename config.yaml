@@ -1,4 +1,82 @@
-baseURL: "https://example.com"
+baseURL: "https://thenoesismagazine.netlify.app"
 languageCode: "en-us"
-title: "Hugo Novela"
+title: "The Noesis Magazine"
 pygmentsstyle: 'monokai'
+paginate: 12
+enableEmoji: true
+metaDataFormat: yaml
+enableGitInfo: true
+enableRobotsTXT: true
+
+social:
+  twitter: "#"
+  github: "#"
+  instagram: "#"
+  linkedin: "#"
+  dribbble: "#"
+  youtube: "#"
+
+params:
+  description: "Welcome to Ajulu's Thoughts - Stephen Ajulu's Informative Blog, where we talk about tech, cybersecurity, lifestyle, finance and more."
+  images: "images/about.png"
+  hero: "images/about.png"
+  GithubEdit: "https://github.com/stephenajulu/thenoesismagazine/edit/master/content/"
+  formaction: "#"
+  twitter: "@thenoesismagazine"
+  author: "The Noesis Magazine"
+  email: "thenoesismagazine@gmail.com"
+  toc: true
+  adsense:
+    client: "#"
+    inArticleSlot: "#"
+    BannerSlot: "#"
+
+taxonomies:
+  author: authors
+  tag: tags
+  category: categories
+  video: videos
+  
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    tableOfContents:
+      endLevel: 4
+      ordered: true
+      startLevel: 2
+      
+related:
+  threshold: 0
+  includeNewer: true
+  toLower: false
+  indices:
+  - name: categories
+    weight: 200
+  - name: tags
+    weight: 200
+  - name: keywords
+    weight: 200
+  - name: author
+    weight: 50
+  - name: date
+    weight: 10
+  
+outputFormats:
+  SearchIndex:
+    mediaType: "application/json"
+    baseName: "search"
+
+outputs:
+  home: 
+  - HTML
+  - RSS
+  - JSON
+  - SearchIndex
+  section: 
+  - HTML
+  - RSS
+  - JSON
+
+
+
