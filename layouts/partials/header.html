@@ -1,10 +1,14 @@
 <Section class="section">
   <div class="nav-container">
     <a class="logo-link" href="/">
-      {{ partial "icons/ui/logo.html" . }}
+      {{ partial "icons/ui/logo3.html" . }}
       <span class="header-hidden">Navigate back to the homepage</span>
     </a>
     <div class="nav-controls">
+      <button id="navigationMenu" class="icon-wrapper">
+             {{ partial "menu/menu.html"}}
+    </button>
+&nbsp; &nbsp; 
       <button id="copyButton" class="icon-wrapper">
         {{ partial "icons/ui/link.html" . }}
         <div id="toolTip" class="tool-tip " >
